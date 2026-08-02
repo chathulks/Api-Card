@@ -148,3 +148,44 @@ let text2 = textValue => textValue;
 console.log(text2("Hi Sadeesha.."));
 
 //-------------------------------------------------------------------
+
+//-------------------------------------------------------------------
+const productList = [
+    {
+        name: "Suger Bun",
+        inStock: true,
+    },
+    {
+        name: "Crocadile Bun",
+        inStock: true,
+    },
+    {
+        name: "Vegitable Bun",
+        inStock: false,
+    },
+    {
+        name: "Piza",
+        inStock: false,
+    },
+    {
+        name: "Rotie",
+        inStock: false,
+    }
+];
+
+// for (pro of productList) {
+//     console.log(pro);
+// }
+
+productList.forEach(pro => console.log(pro));
+
+//-------------------------------------------------------------------
+
+//-------------------------------------------------------------------
+const leterList = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+console.log(leterList);
+
+let sortArray = leterList.toSorted();
+console.log(sortArray);
+
+//-------------------------------------------------------------------
