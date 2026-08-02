@@ -4,16 +4,36 @@ function gesNumber() {
     let number = Math.floor(randomNumber);
 
     console.log(number);
-    
+
     if (userNumber == "") {
-        alert("Please enter Your number..!");
+        Swal.fire({
+            title: "Please enter Your number..!",
+            icon: "warning",
+            draggable: true
+        });
     } else if (userNumber > number) {
-        alert("Your Number Greater than in Genarate number.");
+        Swal.fire({
+            title: "Your Number Greater than in Genarate number.",
+            icon: "warning",
+            draggable: true
+        });
     } else if (userNumber < number) {
-        alert("Your Number Less than in Genarate number.");
+        Swal.fire({
+            title: "Your Number Less than in Genarate number.",
+            icon: "warning",
+            draggable: true
+        });
     } else if (userNumber == number) {
-        alert("Success Full Your Number Gesing.!");
+        Swal.fire({
+            title: "Success Full Your Number Gesing.!",
+            icon: "success",
+            draggable: true
+        });
     } else {
-        alert("Try Again..");
+        Swal.fire({
+            title: "Try Again..",
+            icon: "cancel",
+            draggable: true
+        });
     }
 }
