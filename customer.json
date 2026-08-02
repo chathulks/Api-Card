@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Sadeesha",
+        "city": "Baduraliya",
+        "age": 24,
+        "mobile": "0704591135"
+    },
+    {
+        "id": 2,
+        "name": "Chathumal",
+        "city": "Mathugama",
+        "age": 24,
+        "mobile": "0772244456"
+    },
+    {
+        "id": 3,
+        "name": "Ravidu",
+        "city": "Baduraliya",
+        "age": 24,
+        "mobile": "0785858789"
+    },
+    {
+        "id": 4,
+        "name": "Kalana",
+        "city": "Aluthgama",
+        "age": 25,
+        "mobile": "0783636963"
+    },
+    {
+        "id": 5,
+        "name": "Savidu",
+        "city": "Kamburawala",
+        "age": 20,
+        "mobile": "0346969852"
+    }
+]

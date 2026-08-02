@@ -226,3 +226,29 @@ let st = studentList.find(student => student.id === "005");
 console.log(st);
 
 //-------------------------------------------------------------------
+
+//-------------------------------------------------------------------
+fetch("https://fakestoreapi.com/products").then(result => result.json()).then(data => {
+    console.log(data);
+
+    let container = document.getElementById("container");
+    let body = "";
+
+    data.forEach(element => {
+        body += `
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="${element.image}" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">${element.title}</h5>
+                            <p class="card-text">${element.description}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+        `
+    });
+
+    container.innerHTML = body;
+});
+//-------------------------------------------------------------------
