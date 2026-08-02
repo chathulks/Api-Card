@@ -81,18 +81,20 @@ const product = [
     }
 ];
 
-let inStock = product.filter(product => product.inStock == true);
-let outOfStock = product.filter(product => product.inStock == false);
-console.log(outOfStock);
+// let inStock = product.filter(product => product.inStock == true);
+// let outOfStock = product.filter(product => product.inStock == false);
+// console.log(outOfStock);
 
-// function productFilter(product){
-//     return product.inStock == true;
-// }
+let inStock = product.filter(
+    function (product) {
+        return productFilter(product);
+    }
+)
 
-// product.filter(
-//     function(product){
-//         return productFilter(product);
-//     }
-// )
+function productFilter(product) {
+    return product.inStock == true;
+}
+
+console.log(inStock);
 
 //-------------------------------------------------------------------
