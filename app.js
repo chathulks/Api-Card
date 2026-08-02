@@ -198,3 +198,31 @@ let newSalary = empSalary.map(salary => salary * 2);
 console.log(newSalary);
 
 //-------------------------------------------------------------------
+
+//-------------------------------------------------------------------
+const studentList = [
+    {
+        id: "001",
+        name: "Sadeesha"
+    }, {
+        id: "002",
+        name: "Ravindu"
+    }, {
+        id: "003",
+        name: "Kumara"
+    }, {
+        id: "004",
+        name: "Pasindu"
+    }, {
+        id: "005",
+        name: "Sugath"
+    }, {
+        id: "006",
+        name: "Sujith"
+    }
+];
+
+let st = studentList.find(student => student.id === "005");
+console.log(st);
+
+//-------------------------------------------------------------------
