@@ -42,17 +42,18 @@
 
 
 // ------------------------------------------------------------------
-const customerList = [];
-customerList.push(1);
-customerList.push(2);
-customerList.push(3);
-customerList.push(4);
-customerList.push(5);
 
-console.log(customerList);
+// const customerList = [];
+// customerList.push(1);
+// customerList.push(2);
+// customerList.push(3);
+// customerList.push(4);
+// customerList.push(5);
 
-let customerListReverse = customerList.reverse();
-console.log(customerListReverse);
+// console.log(customerList);
+
+// let customerListReverse = customerList.reverse();
+// console.log(customerListReverse);
 
 // ------------------------------------------------------------------
 
@@ -96,5 +97,54 @@ function productFilter(product) {
 }
 
 console.log(inStock);
+
+//-------------------------------------------------------------------
+
+//-------------------------------------------------------------------
+
+//---step 01---
+
+function numberSum(num1, num2) {
+    return num1 + num2
+}
+
+console.log(numberSum(5, 8));
+
+//---step 02---
+
+let sum = function numberSum(num1, num2) {
+    return num1 + num2
+}
+
+console.log(sum(8, 8));
+
+//---step 03---
+
+let sum2 = (num1, num2) => {
+    return num1 + num2
+}
+
+console.log(sum2(10, 10));
+
+//---step 04---
+
+let sum3 = (num1, num2) => num1 + num2;
+
+console.log(sum3(20, 20));
+
+//---singale value step 01---
+
+let text = textValue => {
+    return textValue;
+}
+
+console.log(text("Hi Bunjo.."));
+
+//---singale value step 02---
+
+let text2 = textValue => textValue;
+
+
+console.log(text2("Hi Sadeesha.."));
 
 //-------------------------------------------------------------------
