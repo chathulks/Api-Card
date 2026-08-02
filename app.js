@@ -55,3 +55,44 @@ let customerListReverse = customerList.reverse();
 console.log(customerListReverse);
 
 // ------------------------------------------------------------------
+
+
+//-------------------------------------------------------------------
+const product = [
+    {
+        name: "Suger Bun",
+        inStock: true,
+    },
+    {
+        name: "Crocadile Bun",
+        inStock: true,
+    },
+    {
+        name: "Vegitable Bun",
+        inStock: false,
+    },
+    {
+        name: "Piza",
+        inStock: false,
+    },
+    {
+        name: "Rotie",
+        inStock: false,
+    }
+];
+
+let inStock = product.filter(product => product.inStock == true);
+let outOfStock = product.filter(product => product.inStock == false);
+console.log(outOfStock);
+
+// function productFilter(product){
+//     return product.inStock == true;
+// }
+
+// product.filter(
+//     function(product){
+//         return productFilter(product);
+//     }
+// )
+
+//-------------------------------------------------------------------
