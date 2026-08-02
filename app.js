@@ -189,3 +189,12 @@ let sortArray = leterList.toSorted();
 console.log(sortArray);
 
 //-------------------------------------------------------------------
+
+//-------------------------------------------------------------------
+const empSalary = [75000, 39000, 45000, 89000, 15000];
+console.log(empSalary);
+
+let newSalary = empSalary.map(salary => salary * 2);
+console.log(newSalary);
+
+//-------------------------------------------------------------------
